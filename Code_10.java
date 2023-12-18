@@ -1,22 +1,26 @@
 import java.util.Scanner;
 class Code_10{
+    static boolean isPrime(int n){
+            if(n<2){
+                return false;
+            }
+            for(int i=2; i<n; i++){
+                if(n%i==0){
+                    return false; 
+                }
+            }
+            return true;
+        }
     public static void main(String er[]){
+        // Code_10 m=new Code_10();
         Scanner sc=new Scanner(System.in);
         int num1=sc.nextInt();
         int num2=sc.nextInt();
-        boolean count=true;
         for(int i=num1; i<=num2; i++){
-            if(i==1){
-                System.out.println(i);
-            }
-            for(int j=2; j<i; j++){
-                if(i%j==0){
-                    count=false;
-                }
-            }
-            if(count==true){
-                System.out.println(i);
-            }
+           if(isPrime(i))
+           System.out.print(i+" ");
+            
         }
+        
     }
 }
