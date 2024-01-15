@@ -11,5 +11,6 @@ class deciToBani{
             i++;
         }
         System.out.println("ans "+ans);
+        System.out.println("ans "+ans);
     }
 }
