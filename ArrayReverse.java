@@ -3,7 +3,7 @@ class ArrayReverse{
         int arr[]={12,34,55,32,45};
         int left=0;
         int right=arr.length;
-        while(left<=right){
+        while(left<right){
             int temp;
             temp=arr[left];
             arr[left]=arr[right];
